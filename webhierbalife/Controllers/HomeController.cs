@@ -18,8 +18,33 @@ namespace webhierbalife.Controllers
         }
         public ActionResult Buscar(string id="" )
         {
-            var productos = bd.Producto.Where(x => x.Descripcion.Contains(id)).ToList();
+            var productos = bd.Producto
+                .Where(x => x.Descripcion.Contains(id))
+                .Take(20)
+                .ToList();
+            ViewBag.clave = id;
             return View(productos);
         }
+        public ActionResult producto()
+        {
+            return View();
+        }
+        public ActionResult cart()
+        {
+            return View();
+        }
+        public ActionResult register()
+        {
+            return View();
+        }
+        public ActionResult product_detail()
+        {
+            return View();
+        }
+        public ActionResult checkout()
+        {
+            return View();
+        }
+
     }
 }

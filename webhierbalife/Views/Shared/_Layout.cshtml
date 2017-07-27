@@ -41,16 +41,19 @@
             <div class="span4">
                 <form method="get" class="navbar-form" action="@Url.Action("Buscar"," Home")"  >
                     
-                    <input type="text" name="id"  class="span1" id="navSearchInput"  >
+                    <input type="text" name="id"  class="input-block-level search-query"" id="navSearchInput"  >
                 </form>
             </div>
             <div class="span8">
                 <div class="account pull-right">
                     <ul class="user-menu">
                         <li><a href="#">My Account</a></li>
-                        <li><a href="~/cart.html">Your Cart</a></li>
-                        <li><a href="~/checkout.html">Checkout</a></li>
-                        <li><a href="~/register.html">Login</a></li>
+                    
+                        <li><a href="~/Views/Home/cart.cshtml">Your Cart</a></li>
+                        <li><a href="~/Views/Home/checkout.cshtml">checkout</a></li>
+                       
+                        <li><a href="~/Views/Home/register.cshtml">Login</a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -58,37 +61,55 @@
     </div>
     <div id="wrapper" class="container">
         <section class="navbar main-menu">
-            <div class="navbar-inner main-menu">
-                <a href="~/index.html" class="logo pull-left"><img src="~/themes/images/logo.png" class="site_logo" alt=""></a>
+            <div class="navbar-inner ">
+                <a href="~/index.cshtml" class="logo pull-left"><img src="~/themes/images/logo.png" class="site_logo"  style="max-width: 200px; max-height: 300px"></a>
                 <nav id="menu" class="pull-right">
                     <ul>
                         <li>
-                            <a href="./products.html">Productos</a>
+                            <a href="./~/products.html">Productos</a>
                             <ul>
-                                <li><a href="./products.html">Lista de Precios en Linea</a></li>
-                                <li><a href="./products.html">Pedidos por Codigos</a></li>
-                                <li><a href="./products.html">Catalogo de  Pedidos</a></li>
+                                <li><a href="./~/products.html">Lista de Precios en Linea</a></li>
+                                <li><a href="./~/products.html">Pedidos por Codigos</a></li>
+                                <li><a href="./~/products.html">Catalogo de  Pedidos</a></li>
                             </ul>
                         </li>
                      
                         
                         <li>
-                            <a href="./products.html">Productos Externos</a>
+                            <a href="./~/products.html">Productos Externos</a>
                             <ul>
-                                <li><a href="./products.html">Productos para manos</a></li>
-                                <li><a href="./products.html">Cremas de Rostro</a></li>
-                                <li><a href="./products.html">limpieza de Rostro</a></li>
+                                <li><a href="./~/products.html">Productos para manos</a></li>
+                                <li><a href="./~/products.html">Cremas de Rostro</a></li>
+                                <li><a href="./~/products.html">limpieza de Rostro</a></li>
                             </ul>
                         </li>
-                        <li><a href="./products.html">MI Oficina</a></li>
-                        <li><a href="./products.html">Registro de Clubes</a></li>
-                        <li><a href="./products.html">Clientes</a></li>
+                        <li><a href="./~/products.html">MI Oficina</a></li>
+                        <li><a href="./~/products.html">Registro de Clubes</a></li>
+                        <li><a href="./~/products.html">Clientes</a></li>
                     </ul>
                 </nav>
             </div>
         </section>
       
-      
+
+        <section class="homepage-slider" id="home-slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="~/themes/images/carousel/banner-1.jpg" style="max-width: 1000px; max-height: 3850px" />
+                    </li>
+                    <li>
+                        <img src="~/themes/images/carousel/banner-2.jpg" style="max-width: 1000px; max-height:3850px" />
+                        <div class="intro">
+                            <h1>Mid season sale</h1>
+                            <p><span>Up to 50% Off</span></p>
+                            <p><span>On selected items online and in stores</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
         <section class="main-content">
             <div class="row">
                 <div class="span12">
@@ -109,13 +130,13 @@
                     <a href="#"><img alt="" src="~/themes/images/clients/35.png"></a>
                 </div>
                 <div class="span2">
-                    <a href="#"><img alt="" src="~/themes/images/clients/1.png"></a>
+                    <a href="#"><img alt="" src="~/themes/images/clients/1.png.jpg"></a>
                 </div>
                 <div class="span2">
-                    <a href="#"><img alt="" src="~/themes/images/clients/2.png"></a>
+                    <a href="#"><img alt="" src="~/themes/images/clients/2.png.jpg"></a>
                 </div>
                 <div class="span2">
-                    <a href="#"><img alt="" src="~/themes/images/clients/3.png"></a>
+                    <a href="#"><img alt="" src="~/themes/images/clients/3.png.jpg"></a>
                 </div>
                 <div class="span2">
                     <a href="#"><img alt="" src="~/themes/images/clients/4.png"></a>
@@ -127,10 +148,10 @@
                 <div class="span3">
                     <h4>Sitios Oficiales de Herbalife</h4>
                     <ul class="nav">
-                        <li><a href="./index.html">Herbalife.com</a></li>
-                        <li><a href="./about.html">Esto es Herbalife</a></li>
-                        <li><a href="./contact.html">Herbalife SKIN</a></li>
-                        <li><a href="./cart.html">Herbalife Sports</a></li>
+                        <li><a href="./~/index.html">Herbalife.com</a></li>
+                        <li><a href="./~/about.html">Esto es Herbalife</a></li>
+                        <li><a href="./~/contact.html">Herbalife SKIN</a></li>
+                        <li><a href="./~/cart.html">Herbalife Sports</a></li>
                         
                     </ul>
                 </div>
@@ -144,7 +165,7 @@
                     </ul>
                 </div>
                 <div class="span5">
-                    <p class="logo"><img src="~/themes/images/logo.png" class="site_logo" alt=""></p>
+                    <p class="logo"><img src="~/themes/images/logo.png"  alt=""></p>
                     <p>Todos los productos y nombres comerciales que aparecen en este sitio, a menos que se indique lo contrario, son propiedad de Herbalife International of America, Inc.</p>
                     <br />
                     <span class="social_icons">
@@ -159,7 +180,84 @@
         
     </div>
     <script src="~/themes/js/common.js"></script>
-   
+    <script src="~/themes/js/jquery.flexslider-min.js"></script>
+
+    <script src="~/Scripts/jquery.form.min.js"></script>
+    <script type="text/javascript">
+			$(function() {
+				$(document).ready(function() {
+					$('.flexslider').flexslider({
+						animation: "fade",
+						slideshowSpeed: 9000,
+						animationSpeed: 1000,
+						controlNav: false,
+						directionNav: true,
+						controlsContainer: ".flex-container" // the container that holds the flexslider
+					});
+				});
+			});
+		</script>    <script> 
+        $(function () {
+            var carrito = localStorage.getItem("carrito");
+            var productos = [];
+            if (carrito != null) {
+                productos = JSON.parse(carrito);
+                CargaCarrito(productos);
+            }
+        });
+
+      
+        function CargaCarrito(productos) {
+            var html = '';
+            var total = 0;
+
+            $("#nroProductosCarrito").text('(' + productos.length + ')');
+
+            $.each(productos, function () {
+                total += this.Precio * this.Cantidad
+                html += '<div class="item-in-cart clearfix">' +
+                       '    <div class="image">' +
+                '             <img src="/ImgProductos/' + this.Imagen + '"  width="124" height="124" alt="cart item" />' +
+                '           </div>' +
+                '           <div class="desc">' +
+                '                 <strong><a href="product.html">' + this.Denominacion + '</a></strong>' +
+                '                <span class="light-clr qty">Qty: ' + this.Cantidad + ' &nbsp;' +
+                '                       <a href="#" class="icon-remove-sign" title="Remove Item"></a>' +
+                '                    </span>' +
+                '                </div>' +
+                '                <div class="price">' +
+                '                   <strong>S/. ' + this.Precio + '</strong>' +
+                '               </div>' +
+                '           </div>';
+            });
+            $('#itemcarrito').html(html);
+
+            $("#totalCompraCarrito,#totalCarrito").text('S/.' + total);
+
+        }
+        var itemActual;
+        for (var i = 0; i < productos.length; i++) {
+            if (productos[i].ProductoId == productoid) {
+                itemActual = productos[i];
+            }
+        
+
+        if (!itemActual) {
+            productos.push({ ProductoId: productoid, Denominacion: denominacion, Precio: precio, Cantidad: 1, Imagen: imagen });
+        } else {
+            itemActual.Cantidad++;
+        }
+
+        var jsonStr = JSON.stringify(productos);
+        localStorage.setItem("carrito", jsonStr);
+
+        CargaCarrito(productos);
+
+        }
+
+
+    </script>
+   @RenderSection("scripts",false)
    
 </body>
 
